@@ -3,7 +3,7 @@
 	let imageUrls: string[] = [];
 
 	function showImages() {
-		imageUrls = [...new Set(imageUrlInput.trim().split('\n'))];
+		imageUrls = [...imageUrlInput.trim().split('\n')];
 	}
 </script>
 
@@ -13,7 +13,7 @@
 
 	{#if imageUrls.length}
 		<div class="grid">
-			{#each imageUrls as imageUrl (imageUrl)}
+			{#each imageUrls as imageUrl, index (index)}
 				{#if imageUrl}
 					<img src={imageUrl} alt="User uploaded" />
 				{/if}
