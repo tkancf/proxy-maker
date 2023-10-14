@@ -26,6 +26,7 @@
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(3, 63mm);
+		grid-template-rows: repeat(3, 1fr); /* 明示的に3つの行を追加 */
 		width: 189mm;
 		height: 264mm;
 	}
