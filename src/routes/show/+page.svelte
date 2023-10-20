@@ -9,8 +9,15 @@
 	}
 </script>
 
-<!-- トップページへ戻るボタンを上部に移動 -->
-<button on:click={backToTop} class="back-button">トップページへ戻る</button>
+<div class="bg-blue-500 p-4 text-white flex justify-between items-center">
+	<div class="text-lg font-semibold">Your App Name</div>
+	<button
+		on:click={backToTop}
+		class="bg-white text-blue-500 px-4 py-2 rounded hover:bg-blue-200 transition-colors"
+	>
+		トップページへ戻る
+	</button>
+</div>
 
 <div class="grid">
 	{#each imageUrls as imageUrl, index (index)}
@@ -37,7 +44,7 @@
 		grid-template-rows: repeat(3, 1fr);
 		width: 189mm;
 		height: 264mm;
-		margin-top: 20px; /* ボタンとのスペース */
+		margin-top: 20px; /* ナビゲーションとのスペース */
 	}
 
 	img {
@@ -48,25 +55,10 @@
 		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 	}
 
-	.back-button {
-		margin-bottom: 20px; /* グリッドとのスペース */
-		padding: 10px 20px;
-		cursor: pointer;
-		background-color: #333;
-		color: #fff;
-		border: none;
-		border-radius: 5px;
-		transition: background-color 0.3s;
-	}
-
-	.back-button:hover {
-		background-color: #555;
-	}
-
 	/* 印刷時のスタイル */
 	@media print {
-		.back-button {
-			display: none; /* ボタンを非表示にする */
+		.bg-blue-500 {
+			display: none; /* ナビゲーションを非表示にする */
 		}
 		.grid {
 			margin-top: 0; /* 余白を削除 */
