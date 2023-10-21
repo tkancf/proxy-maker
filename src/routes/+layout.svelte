@@ -8,16 +8,15 @@
 	}
 </script>
 
-<!-- ナビゲーションバー -->
 <div class="bg-blue-500 p-4 text-white flex justify-between items-center">
-	<div class="text-lg font-semibold">Your App Name</div>
 	<button
+		class="text-lg font-semibold bg-transparent border-none p-0 m-0 cursor-pointer focus:outline-none"
 		on:click={backToTop}
-		class="bg-white text-blue-500 px-4 py-2 rounded hover:bg-blue-200 transition-colors"
 	>
-		トップページへ戻る
+		Your App Name
 	</button>
 </div>
+
 <slot />
 
 <style>
