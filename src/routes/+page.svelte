@@ -16,7 +16,10 @@
 	<textarea
 		bind:value={imageUrlInput}
 		rows="9"
-		placeholder="画像のURLを入力してください..."
+		placeholder="1行に1つの画像URLを入力してください。
+例:
+https://example.com/image1.jpg
+https://example.com/image2.jpg"
 		class="w-full p-2 text-lg border rounded mb-5 resize-none"
 	/>
 	<button
