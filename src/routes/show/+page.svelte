@@ -1,23 +1,7 @@
 <script>
 	import { getContext } from 'svelte';
-	import { goto } from '$app/navigation';
-
 	const imageUrls = getContext('imageUrls');
-
-	function backToTop() {
-		goto('/');
-	}
 </script>
-
-<div class="bg-blue-500 p-4 text-white flex justify-between items-center">
-	<div class="text-lg font-semibold">Your App Name</div>
-	<button
-		on:click={backToTop}
-		class="bg-white text-blue-500 px-4 py-2 rounded hover:bg-blue-200 transition-colors"
-	>
-		トップページへ戻る
-	</button>
-</div>
 
 <div class="grid">
 	{#each imageUrls as imageUrl, index (index)}
@@ -54,12 +38,8 @@
 		border: 1px solid black;
 		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 	}
-
 	/* 印刷時のスタイル */
 	@media print {
-		.bg-blue-500 {
-			display: none; /* ナビゲーションを非表示にする */
-		}
 		.grid {
 			margin-top: 0; /* 余白を削除 */
 		}
