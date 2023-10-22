@@ -6,7 +6,7 @@
 <div class="grid">
 	{#each imageUrls as imageUrl, index (index)}
 		{#if imageUrl}
-			<img src={imageUrl} alt="User uploaded" />
+			<img src={imageUrl} alt="Proxy card img" />
 		{/if}
 	{/each}
 </div>
