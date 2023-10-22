@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
 	import { getContext } from 'svelte';
-	const imageUrls = getContext('imageUrls');
+	const imageUrls: string = getContext('imageUrls');
 </script>
 
 <div class="grid">
