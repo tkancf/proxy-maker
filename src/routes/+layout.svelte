@@ -13,7 +13,7 @@
 		class="text-lg font-semibold bg-transparent border-none p-0 m-0 cursor-pointer focus:outline-none"
 		on:click={gotoTop}
 	>
-		Your App Name
+		Proxy Maker
 	</button>
 </div>
 
