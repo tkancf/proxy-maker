@@ -1,14 +1,22 @@
 <script lang="ts">
-	import { getContext } from 'svelte';
+	import { getContext, onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 
 	const imageUrls: string[] = getContext('imageUrls');
 	let imageUrlInput: string = '';
 
 	const goImages = () => {
+		imageUrls.splice(0, imageUrls.length);
 		imageUrls.push(...imageUrlInput.trim().split('\n'));
 		goto('/images');
 	};
+
+	onMount(() => {
+		if (imageUrls.length > 0) {
+			imageUrlInput = imageUrls.join('\n');
+		}
+	});
+
 	import '../app.css';
 </script>
 
