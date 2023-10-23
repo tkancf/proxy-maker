@@ -15,6 +15,12 @@
 	>
 		Proxy Maker
 	</button>
+	<button
+		class="text-lg font-semibold bg-transparent border-none p-0 m-0 cursor-pointer focus:outline-none"
+		on:click={() => goto('/help')}
+	>
+		使い方
+	</button>
 </div>
 
 <slot />
