@@ -32,7 +32,7 @@ https://example.com/image2.jpg"
 	/>
 	<button
 		on:click={goImages}
-		class="cursor-pointer bg-blue-500 text-white border-0 py-2 px-5 rounded text-lg transition-colors hover:bg-blue-700"
+		class="cursor-pointer bg-gray-700 text-white border-0 py-2 px-5 rounded text-lg transition-colors hover:bg-blue-500"
 	>
 		プロキシ画像を表示
 	</button>
