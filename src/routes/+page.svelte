@@ -16,8 +16,6 @@
 			imageUrlInput = imageUrls.join('\n');
 		}
 	});
-
-	import '../app.css';
 </script>
 
 <div class="bg-white p-9 rounded">
