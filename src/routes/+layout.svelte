@@ -8,15 +8,15 @@
 	}
 </script>
 
-<div class="bg-blue-500 p-4 text-white flex justify-between items-center">
+<div class="bg-neutral-600 text-neutral-100 p-4 text-center flex items-center space-x-4">
 	<button
-		class="text-lg font-semibold bg-transparent border-none p-0 m-0 cursor-pointer focus:outline-none"
+		class="hover:text-neutral-400 text-lg font-semibold bg-transparent border-none p-0 m-0 cursor-pointer focus:outline-none"
 		on:click={gotoTop}
 	>
 		Proxy Maker
 	</button>
 	<button
-		class="text-lg font-semibold bg-transparent border-none p-0 m-0 cursor-pointer focus:outline-none"
+		class="hover:text-neutral-400 text-lg font-semibold bg-transparent border-none p-0 m-0 cursor-pointer focus:outline-none"
 		on:click={() => goto('/help')}
 	>
 		使い方
@@ -28,7 +28,7 @@
 <style>
 	/* 印刷時のスタイル */
 	@media print {
-		.bg-blue-500 {
+		.bg-neutral-600 {
 			display: none; /* ナビゲーションを非表示にする */
 		}
 	}

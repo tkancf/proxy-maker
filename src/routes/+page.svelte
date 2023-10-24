@@ -20,7 +20,7 @@
 	import '../app.css';
 </script>
 
-<div class="bg-white p-10 rounded">
+<div class="bg-white p-9 rounded">
 	<textarea
 		bind:value={imageUrlInput}
 		rows="12"
@@ -32,7 +32,7 @@ https://example.com/image2.jpg"
 	/>
 	<button
 		on:click={goImages}
-		class="cursor-pointer bg-gray-700 text-white border-0 py-2 px-5 rounded text-lg transition-colors hover:bg-blue-500"
+		class="cursor-pointer bg-neutral-600 text-white border-0 py-2 px-5 rounded text-lg transition-colors hover:text-gray-300"
 	>
 		プロキシ画像を表示
 	</button>
