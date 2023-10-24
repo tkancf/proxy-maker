@@ -6,6 +6,10 @@
 	function gotoTop() {
 		goto('/');
 	}
+	function gotoHelp() {
+		goto('/help');
+	}
+	import '../app.css';
 </script>
 
 <div class="bg-neutral-600 text-neutral-100 p-4 text-center flex items-center space-x-4">
@@ -17,7 +21,7 @@
 	</button>
 	<button
 		class="hover:text-neutral-400 text-lg font-semibold bg-transparent border-none p-0 m-0 cursor-pointer focus:outline-none"
-		on:click={() => goto('/help')}
+		on:click={gotoHelp}
 	>
 		使い方
 	</button>
