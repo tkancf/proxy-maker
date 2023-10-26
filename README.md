@@ -1,6 +1,10 @@
 # proxy-maker
 
-## Description
+## About
 
-Proxy Maker is a tool to create proxy cards for the game Magic: The Gathering.
+This application is designed to display a list of URLs of Magic: The Gathering card images side-by-side so that they can be printed as proxy cards.
 It is written in SvelteKit.
+
+## Usage
+
+See https://proxy-maker.tkancf.com/help
