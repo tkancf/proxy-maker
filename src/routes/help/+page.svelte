@@ -1,3 +1,12 @@
+<head:meta>
+	<title>使い方 | Proxy Maker</title>
+	<meta
+		name="description"
+		content="カードの画像URLからプロキシを作成するためのツールの使い方ページです。"
+	/>
+	<meta name="keywords" content="Proxy Maker,プロキシ,画像,URL,使い方" />
+</head:meta>
+
 <div class="px-8 py-12 space-y-8">
 	<h1 class="text-4xl font-semibold">使い方</h1>
 

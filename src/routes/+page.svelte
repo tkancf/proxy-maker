@@ -18,6 +18,12 @@
 	});
 </script>
 
+<head:meta>
+	<title>Proxy Maker</title>
+	<meta name="description" content="カードの画像URLからプロキシを作成するためのツールです。" />
+	<meta name="keywords" content="Proxy Maker,プロキシ,画像,URL" />
+</head:meta>
+
 <div class="bg-white p-9 rounded">
 	<textarea
 		bind:value={imageUrlInput}
